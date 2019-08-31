@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gits.arafat.roadsideassistance.Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+            <LinearLayout style="@style/MenuParentLayout">
+                <LinearLayout
+                    style="@style/DynamicLayoutStyle"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.internal.CheckableImageButton
+                        android:id="@+id/road_side_assistance"
+                        style="@style/MenuItem"
+                        android:src="@mipmap/ic_launcher_round" />
+                    <TextView
+                        style="@style/MenuText"
+                        android:text="@string/road_side_assistance"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/DynamicLayoutStyle"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.internal.CheckableImageButton
+                        android:id="@+id/collision_damage"
+                        style="@style/MenuItem"
+                        android:src="@mipmap/collision_damage" />
+                    <TextView
+                        style="@style/MenuText"
+                        android:text="@string/collision_damage"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/MenuParentLayout">
+                <LinearLayout
+                    style="@style/DynamicLayoutStyle"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.internal.CheckableImageButton
+                        android:id="@+id/key_lost"
+                        style="@style/MenuItem"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/key_lost" />
+                    <TextView
+                        style="@style/MenuText"
+                        android:text="@string/key_lost"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/DynamicLayoutStyle"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.internal.CheckableImageButton
+                        android:id="@+id/battery_problem"
+                        style="@style/MenuItem"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/battery" />
+                    <TextView
+                        style="@style/MenuText"
+                        android:text="@string/battery_problem"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/MenuParentLayout">
+
+                <LinearLayout
+                    style="@style/DynamicLayoutStyle"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.internal.CheckableImageButton
+                        android:id="@+id/out_of_fuel"
+                        style="@style/MenuItem"
+                        android:src="@mipmap/out_of_fuel" />
+                    <TextView
+                        style="@style/MenuText"
+                        android:text="@string/out_of_fuel"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/DynamicLayoutStyle"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.internal.CheckableImageButton
+                        android:id="@+id/tyre_problem"
+                        style="@style/MenuItem"
+                        android:src="@mipmap/tyre_flat" />
+                    <TextView
+                        style="@style/MenuText"
+                        android:text="@string/tyre_problem"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
